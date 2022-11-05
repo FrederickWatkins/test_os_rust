@@ -12,7 +12,9 @@ mod vga_buffer;
 pub extern "C" fn _start() -> ! {
     println!("Some numbers: {} {}", 42, 1.337);
     println!("I'm on the next line now! ");
-    println!("This line is so looooooooooooooooooooooooooooooooooooooong it wraps onto the next one! ");
+    println!(
+        "This line is so looooooooooooooooooooooooooooooooooooooong it wraps onto the next one! "
+    );
     panic!("Some panic message");
 }
 
