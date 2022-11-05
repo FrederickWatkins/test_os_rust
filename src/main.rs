@@ -11,11 +11,11 @@ pub extern "C" fn _start() -> ! {
     println!("Some numbers: {} {}", 42, 1.337);
     println!("I'm on the next line now! ");
     println!("This line is so looooooooooooooooooooooooooooooooooooooong it wraps onto the next one! ");
-
-    loop {}
+    panic!("Some panic message");
 }
 
 #[panic_handler]
-fn panic(_info: &PanicInfo) -> ! {
+fn panic(info: &PanicInfo) -> ! {
+    println!("{}", info);
     loop {}
 }
