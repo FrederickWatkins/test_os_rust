@@ -91,6 +91,7 @@ dependencies = [
  "lazy_static",
  "qemu_test",
  "spin 0.9.4",
+ "vga_buffer",
  "volatile 0.2.7",
 ]
 
@@ -103,6 +104,17 @@ dependencies = [
  "bitflags",
  "rustversion",
  "x86_64",
+]
+
+[[package]]
+name = "vga_buffer"
+version = "0.1.0"
+source = "git+https://github.com/FrederickWatkins/vga_buffer_rust.git#58208e3fdf85a212b49a258972bb49e2f7de5068"
+dependencies = [
+ "lazy_static",
+ "qemu_test",
+ "spin 0.9.4",
+ "volatile 0.2.7",
 ]
 
 [[package]]

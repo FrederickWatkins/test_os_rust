@@ -19,3 +19,4 @@ volatile = "0.2.6"
 spin = "0.9.4"
 lazy_static = { version = "1.4.0", features = ["spin_no_std"] }
 qemu_test = { git = "https://github.com/FrederickWatkins/qemu_test_rust.git" }
+vga_buffer = { git = "https://github.com/FrederickWatkins/vga_buffer_rust.git" }
