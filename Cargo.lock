@@ -46,6 +46,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "qemu_test"
+version = "0.1.0"
+source = "git+https://github.com/FrederickWatkins/qemu_test_rust.git#e3ae0663761a91137e48a39d1906ef943253879e"
+dependencies = [
+ "lazy_static",
+ "spin 0.9.4",
+ "uart_16550",
+ "x86_64",
+]
+
+[[package]]
 name = "rustversion"
 version = "1.0.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -78,10 +89,9 @@ version = "0.1.0"
 dependencies = [
  "bootloader",
  "lazy_static",
+ "qemu_test",
  "spin 0.9.4",
- "uart_16550",
  "volatile 0.2.7",
- "x86_64",
 ]
 
 [[package]]
